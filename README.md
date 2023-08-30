@@ -28,22 +28,22 @@ Works With Blender 3.5
 - PyBinds Library
 # Setup, Tutorial, Tips For Building On Windows x64:
 you will need to build it because it isnt finisched yet (missing gui only testing)
-- Install bullet physics with vcpackage (https://github.com/microsoft/vcpkg , run the command ./vcpkg install bullet3:x64-windows in the directory of vcpkg e.g "mystuff/vcpkg/")
-- copy the bullet phyiscs header directory into the current directory where you want to build the addon ("BlenderBulletPhysicsAddon
-/") [the directory of vcpkg e.g "mystuff\vcpkg"]\vcpkg\installed\x64-windows\include\bullet)
-  (other wise bullet physics wont find the headers and other problems)
+- install vc Package e.g copy https://github.com/microsoft/vcpkg to a directory e.g mystuff/
+- Install bullet physics with vcpackage (run the command ./vcpkg install bullet3:x64-windows in the directory of vcpkg e.g "mystuff\vcpkg\")
+- copy the bullet phyiscs header directory found at mystuff\vcpkg\installed\x64-windows\include\bullet into the current directory where you want to build the addon with the files from this page (current directory = e.g "mystuff\BlenderBulletPhysicsAddon\")
+  (other wise bullet physics wont find the headers and other problems) 
   you may also need to copy CommonFileIOInterface.h into the current directory
   (get the library working post errors, questions here or at the bullet library page)
 - Copy the pybinds directory into the current directory (https://github.com/pybind/pybind11)
 - install CMake (https://cmake.org/)
 - create new folder "build"
-- run the CMake GUI to build the Visual studio project in the build Folder (select the current directory for where is the source code, and where to build the binaries is the build folder) then click Generate.
+- run the CMake GUI to build the Visual studio project in the build Folder (select the current directory for "where is the source code", and for "where to build the binaries" is the build folder) then click Generate.
 - open the Visual Studio project in the build Folder
 - (build phys_view for the bullet-physics Demo / test if the library works)
 - build mybinds to build the python library
-- put the Addon_better.py in a zip file with the library you built which can be found in the Debug/Debug folder or the release folders possibly called mybinds.cp310-win_amd64.pyd
+- put the Addon_better.py in a zip file with the library you built which can be found in e.g mystuff/BlenderBulletPhysicsAddon/build/Debug/Debug folder or the Release folders and possibly called mybinds.cp310-win_amd64.pyd
 
-And that's it the zip file is your addon.
+And that's it the zip file is your Addon.
 
 # Addon Installation in Blender Reminder
-In Blender 3.5 go to Edit/Preferences/Addons/Install select the zip file click install Addon.
+In Blender 3.5 go to Edit/Preferences/Addons/Install select the zip file click install Addon. Then click the Checkbox next to the Addons Name to enable it.
