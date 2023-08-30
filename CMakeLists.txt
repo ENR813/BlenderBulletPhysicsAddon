@@ -38,9 +38,9 @@ include_directories(bullet)
 pybind11_add_module(mybinds myBulletPythonBindsThreaded.cpp)
 #target_compile_definitions(mybinds PUBLIC LIBRARY)
 
-add_executable(test visual_test.cpp)
+#add_executable(test visual_test.cpp)
 
-add_executable(phys_view bullet_test_vis.cpp)
+#add_executable(phys_view bullet_test_vis.cpp)
 
 add_executable(test_binds myBulletPythonBindsThreaded.cpp)
 target_compile_definitions(test_binds PUBLIC EXE=1)
