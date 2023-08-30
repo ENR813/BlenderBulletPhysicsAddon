@@ -26,7 +26,7 @@ Works With Blender 3.5
 - Bullet Physics library
 - CMake
 - PyBinds Library
-# Setup, Tutorial, Tips For Building On Windows x64:
+# Setup Tutorial and Tips For Building On Windows x64:
 you will need to build it because it isnt finisched yet (missing gui only testing)
 - install vc Package e.g copy https://github.com/microsoft/vcpkg to a directory e.g mystuff/
 - Install bullet physics with vcpackage (run the command ./vcpkg install bullet3:x64-windows in the directory of vcpkg e.g "mystuff\vcpkg\")
