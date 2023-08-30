@@ -11,6 +11,7 @@ A Simple setup you can try is:
 - install the BulletAddonSimple.zip file in blender as an Addon
 - download Workingtest.blend
 - run the python script thats open
+![25fps](https://github.com/ENR813/BlenderBulletPhysicsAddon/assets/50517527/7126508f-ab43-4b2c-9224-b066e387fceb)
 
 Press Space to Start And Stop the Simulation! It will shop up as debug lines of the selected Mesh!
 
