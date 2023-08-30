@@ -29,3 +29,13 @@ you will need to build it because it isnt finisched yet (missing gui only testin
 
 General IDEA of this Project:
 Use the Bullet Physics library Functions For simulating softbodies in Blender, by creating python binds with pybinds11 to create a python library that binds to cpp code that can be put inside an Addon and Run Efficently because its cpp code / And Faster Than the Current softbody system in blender.
+
+# EASY STARTUP/ TEST INSTALLATION
+A Simple setup you can try is:
+-install the BulletAddonSimple.zip file in blender as an Addon
+-download Workingtest.blend
+-run the python script thats open
+
+Press Space to Start And Stop the Simulation!
+
+Warning my Crash Blender Allot.
