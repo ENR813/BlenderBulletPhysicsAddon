@@ -1,3 +1,4 @@
+# UNFINISHED PROJECT NEEDS A GUI AND BUG/CRASH FIXES
 # BlenderBulletPhysicsAddon
 An Addon that lets you use the ABSOLUTLY INCREDIBLE SOFTBODY AND rigidbody Physics from the bullet physics Library IN BLENDER.
 Because as it turns out these can actually RUN CONSIDERABLY FAST 100fps!!! if they aren't coded 
@@ -7,7 +8,19 @@ faster and better bullet physics version.
 # General Technical Idea/Plan of this Project:
 Use the Bullet Physics library Functions For simulating softbodies in Blender, by creating python binds with pybinds11 to create a python library that binds to cpp code that can be put inside an Addon and Run Efficently because its cpp code / And Faster Than the Current softbody system in blender.
 
-# Requirements: 
+# EASY STARTUP/ TEST INSTALLATION
+A Simple setup you can try is:
+-install the BulletAddonSimple.zip file in blender as an Addon
+-download Workingtest.blend
+-run the python script thats open
+Press Space to Start And Stop the Simulation! Will SHOW up as debug lines of the selected Mesh!
+WARNING may Crash Blender.
+Works With Blender 3.5
+
+# For Contributers:
+- There is some GUI Code Available For A Quick startup/ lazy references may be helpful for building a GUI in Blender
+
+# Requirements For Building: 
 -Visual Studio 2017 or higher
 -Bullet Physics (Install this preferably with vcpackage)
 -CMake
@@ -23,27 +36,14 @@ you will need to build it because it isnt finisched yet (missing gui only testin
   (get the library working post errors, questions here or at the bullet library page)
 - Copy the pybinds directory into the current directory (https://github.com/pybind/pybind11)
 - install CMake (https://cmake.org/)
-
 -create new folder "build"
 -run the CMake GUI to build the Visual studio project in the build Folder (select the current directory for where is the source code, and where to build the binaries is the build folder) then click Generate.
-
 -open the Visual Studio project in the build Folder
--and build phys_view for the bullet-physics Demo
--or build mybinds to build the python library
-
-put the Addon_better.py in a zip file with the library you built which can be found in the Debug/Debug folder or the release folders possibly called mybinds.cp310-win_amd64.pyd
+-(build phys_view for the bullet-physics Demo / test if the library works)
+-build mybinds to build the python library
+-put the Addon_better.py in a zip file with the library you built which can be found in the Debug/Debug folder or the release folders possibly called mybinds.cp310-win_amd64.pyd
 
 And that's it the zip file is your addon.
 
 # Addon Installation in Blender Reminder
 In Blender 3.5 go to Edit/Preferences/Addons/Install select the zip file click install Addon.
-
-# EASY STARTUP/ TEST INSTALLATION
-A Simple setup you can try is:
--install the BulletAddonSimple.zip file in blender as an Addon
--download Workingtest.blend
--run the python script thats open
-
-Press Space to Start And Stop the Simulation!
-
-Warning may Crash Blender Allot.
