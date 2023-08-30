@@ -8,9 +8,9 @@ Use the Bullet Physics library Functions For simulating softbodies in Blender, b
 
 # EASY STARTUP/ TEST INSTALLATION
 A Simple setup you can try is:
--install the BulletAddonSimple.zip file in blender as an Addon
--download Workingtest.blend
--run the python script thats open
+- install the BulletAddonSimple.zip file in blender as an Addon
+- download Workingtest.blend
+- run the python script thats open
 Press Space to Start And Stop the Simulation! Will SHOW up as debug lines of the selected Mesh!
 WARNING may Crash Blender.
 Works With Blender 3.5
@@ -19,11 +19,10 @@ Works With Blender 3.5
 - There is some GUI Code Available in BrokenExampleGuiCode.py For A Quick startup/ lazy references may be helpful for building a GUI in Blender 
 
 # Requirements For Building:
-
--Visual Studio 2017 or higher
--Bullet Physics (Install this preferably with vcpackage)
--CMake
--PyBinds (Just Copy the folder from the github into this directory e.g BlenderBulletPhysicsAddon/PyBinds)
+- Visual Studio 2017 or higher
+- Bullet Physics (Install this preferably with vcpackage)
+- CMake
+- PyBinds (Just Copy the folder from the github into this directory e.g BlenderBulletPhysicsAddon/PyBinds)
 
 # Setup, Tutorial, Tips For Building On Windows x64:
 you will need to build it because it isnt finisched yet (missing gui only testing)
@@ -35,12 +34,12 @@ you will need to build it because it isnt finisched yet (missing gui only testin
   (get the library working post errors, questions here or at the bullet library page)
 - Copy the pybinds directory into the current directory (https://github.com/pybind/pybind11)
 - install CMake (https://cmake.org/)
--create new folder "build"
--run the CMake GUI to build the Visual studio project in the build Folder (select the current directory for where is the source code, and where to build the binaries is the build folder) then click Generate.
--open the Visual Studio project in the build Folder
--(build phys_view for the bullet-physics Demo / test if the library works)
--build mybinds to build the python library
--put the Addon_better.py in a zip file with the library you built which can be found in the Debug/Debug folder or the release folders possibly called mybinds.cp310-win_amd64.pyd
+- create new folder "build"
+- run the CMake GUI to build the Visual studio project in the build Folder (select the current directory for where is the source code, and where to build the binaries is the build folder) then click Generate.
+- open the Visual Studio project in the build Folder
+- (build phys_view for the bullet-physics Demo / test if the library works)
+- build mybinds to build the python library
+- put the Addon_better.py in a zip file with the library you built which can be found in the Debug/Debug folder or the release folders possibly called mybinds.cp310-win_amd64.pyd
 
 And that's it the zip file is your addon.
 
