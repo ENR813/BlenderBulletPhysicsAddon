@@ -23,10 +23,9 @@ Works With Blender 3.5
 
 # Requirements For Building:
 - Visual Studio 2017 or higher
-- Bullet Physics (Install this preferably with vcpackage)
+- Bullet Physics library
 - CMake
-- PyBinds (Just Copy the folder from the github into this directory e.g BlenderBulletPhysicsAddon/PyBinds)
-
+- PyBinds Library
 # Setup, Tutorial, Tips For Building On Windows x64:
 you will need to build it because it isnt finisched yet (missing gui only testing)
 - Install bullet physics with vcpackage (https://github.com/microsoft/vcpkg , run the command ./vcpkg install bullet3:x64-windows in the directory of vcpkg e.g "mystuff/vcpkg/")
