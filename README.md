@@ -19,7 +19,7 @@ WARNING may Crash Blender.
 Works With Blender 3.5
 
 # For Contributers:
-- There is some GUI Code Available in BrokenExampleGuiCode.py For A Quick startup/ lazy references may be helpful for building a GUI in Blender 
+- There is some GUI Code Available in BrokenExampleGuiCode.py For A Quick startup/ lazy references, may be helpful for building a GUI in Blender 
 
 # Requirements For Building:
 - Visual Studio 2017 or higher
