@@ -10,13 +10,14 @@ Requirements:
 -CMake
 -PyBinds (Just Copy the folder from the github into this directory e.g BlenderBulletPhysicsAddon/PyBinds)
 
-Setup For Windows:
+Setup For Building On Windows x64:
 you will need to build it because it isnt finisched yet (missing gui only testing)
 - Install bullet physics with vcpackage (https://github.com/microsoft/vcpkg , run the command ./vcpkg install bullet3:x64-windows in the directory of vcpkg e.g "mystuff/vcpkg/")
 - copy the bullet phyiscs header directory into the current directory where you want to build the addon ("BlenderBulletPhysicsAddon
 /") [the directory of vcpkg e.g "mystuff\vcpkg"]\vcpkg\installed\x64-windows\include\bullet)
   (other wise bullet physics wont find the headers and other problems)
   you may also need to copy CommonFileIOInterface.h into the current directory
+  (get the library working post errors, questions here or at the bullet library page)
 - Copy the pybinds directory into the current directory (https://github.com/pybind/pybind11)
 - install CMake (https://cmake.org/)
 
@@ -25,7 +26,14 @@ you will need to build it because it isnt finisched yet (missing gui only testin
 
 -open the Visual Studio project in the build Folder
 -and build phys_view for the bullet-physics Demo
--or mybinds to build the python library
+-or build mybinds to build the python library
+
+put the Addon_better.py in a zip file with the library you built which can be found in the Debug/Debug folder or the release folders possibly called mybinds.cp310-win_amd64.pyd
+
+And that's it the Zip File is your Addon.
+
+Addon Installation 
+In Blender 3.5 go to Edit/Preferences/Addons/Install select the zip file click install Addon.
 
 General IDEA of this Project:
 Use the Bullet Physics library Functions For simulating softbodies in Blender, by creating python binds with pybinds11 to create a python library that binds to cpp code that can be put inside an Addon and Run Efficently because its cpp code / And Faster Than the Current softbody system in blender.
