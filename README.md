@@ -4,13 +4,16 @@ Because as it turns out these can actually RUN CONSIDERABLY FAST 100fps!!! if th
 in Python and Blender already uses Bullet Physics for other components so it is questionable why they did not use the 
 faster and better bullet physics version.
 
-Requirements: 
+# General Technical Idea/Plan of this Project:
+Use the Bullet Physics library Functions For simulating softbodies in Blender, by creating python binds with pybinds11 to create a python library that binds to cpp code that can be put inside an Addon and Run Efficently because its cpp code / And Faster Than the Current softbody system in blender.
+
+# Requirements: 
 -Visual Studio 2017 or higher
 -Bullet Physics (Install this preferably with vcpackage)
 -CMake
 -PyBinds (Just Copy the folder from the github into this directory e.g BlenderBulletPhysicsAddon/PyBinds)
 
-Setup For Building On Windows x64:
+# Setup, Tutorial, Tips For Building On Windows x64:
 you will need to build it because it isnt finisched yet (missing gui only testing)
 - Install bullet physics with vcpackage (https://github.com/microsoft/vcpkg , run the command ./vcpkg install bullet3:x64-windows in the directory of vcpkg e.g "mystuff/vcpkg/")
 - copy the bullet phyiscs header directory into the current directory where you want to build the addon ("BlenderBulletPhysicsAddon
@@ -30,13 +33,10 @@ you will need to build it because it isnt finisched yet (missing gui only testin
 
 put the Addon_better.py in a zip file with the library you built which can be found in the Debug/Debug folder or the release folders possibly called mybinds.cp310-win_amd64.pyd
 
-And that's it the Zip File is your Addon.
+And that's it the zip file is your addon.
 
-Addon Installation 
+# Addon Installation in Blender Reminder
 In Blender 3.5 go to Edit/Preferences/Addons/Install select the zip file click install Addon.
-
-General IDEA of this Project:
-Use the Bullet Physics library Functions For simulating softbodies in Blender, by creating python binds with pybinds11 to create a python library that binds to cpp code that can be put inside an Addon and Run Efficently because its cpp code / And Faster Than the Current softbody system in blender.
 
 # EASY STARTUP/ TEST INSTALLATION
 A Simple setup you can try is:
@@ -46,4 +46,4 @@ A Simple setup you can try is:
 
 Press Space to Start And Stop the Simulation!
 
-Warning my Crash Blender Allot.
+Warning may Crash Blender Allot.
