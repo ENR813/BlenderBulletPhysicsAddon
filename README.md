@@ -10,12 +10,12 @@ Use the Bullet Physics library Functions For simulating soft bodies in Blender, 
 A Simple setup you can try is:
 - install the BulletAddonSimple.zip file in blender as an addon
 - download Workingtest.blend
-- run the python script that's open
+- open the file in blender and run the python script that's open
 - press space!
 
 ![25fps](https://github.com/ENR813/BlenderBulletPhysicsAddon/assets/50517527/7126508f-ab43-4b2c-9224-b066e387fceb)
 
-Press Space to Start And Stop the Simulation! It will shop up as debug lines of the selected Mesh!
+Press Space to Start And Stop the Simulation! It will show up as debug lines of the selected Mesh!
 
 WARNING may Crash Blender.
 
