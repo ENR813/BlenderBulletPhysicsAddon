@@ -11,8 +11,11 @@ A Simple setup you can try is:
 - install the BulletAddonSimple.zip file in blender as an Addon
 - download Workingtest.blend
 - run the python script thats open
-Press Space to Start And Stop the Simulation! Will SHOW up as debug lines of the selected Mesh!
+
+Press Space to Start And Stop the Simulation! It will shop up as debug lines of the selected Mesh!
+
 WARNING may Crash Blender.
+
 Works With Blender 3.5
 
 # For Contributers:
