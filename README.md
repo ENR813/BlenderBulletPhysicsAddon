@@ -1,9 +1,7 @@
 # UNFINISHED PROJECT NEEDS A GUI AND BUG/CRASH FIXES
 # BlenderBulletPhysicsAddon
 An Addon that lets you use the ABSOLUTLY INCREDIBLE SOFTBODY AND rigidbody Physics from the bullet physics Library IN BLENDER.
-Because as it turns out these can actually RUN CONSIDERABLY FAST 100fps!!! if they aren't coded 
-in Python and Blender already uses Bullet Physics for other components so it is questionable why they did not use the 
-faster and better bullet physics version.
+Because as it turns out Softbody Simulations with very large vertex counts if Coded correctly can actually RUN CONSIDERABLY FAST(eta. 60 fps) AND STABLE!!!
 
 # General Technical Idea/Plan of this Project:
 Use the Bullet Physics library Functions For simulating softbodies in Blender, by creating python binds with pybinds11 to create a python library that binds to cpp code that can be put inside an Addon and Run Efficently because its cpp code / And Faster Than the Current softbody system in blender.
