@@ -4,7 +4,7 @@ An Addon that improves blenders softbody physics by letting you use the softbody
 Because as it turns out Softbody Simulations with very large vertex counts if implemented correctly can actually run considerably fast and stable!
 
 # General Technical Idea/Plan of this Project:
-Use the Bullet Physics library Functions For simulating softbodies in Blender, by creating first creating a python library with pybinds11 that binds to cpp code, that can be put inside an Addon. In order to improve the performance of Softbodies in Blender.
+Use the Bullet Physics library Functions For simulating softbodies in Blender, by creating a python library with pybinds11 that binds to the Bullet phyiscs library which can be put inside an Addon.
 
 # EASY STARTUP/ TEST INSTALLATION
 A Simple setup you can try is:
