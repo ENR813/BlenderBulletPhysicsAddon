@@ -1,4 +1,4 @@
-# UNFINISHED PROJECT NEEDS A GUI AND BUG/CRASH FIXES
+# UNFINISHED PROJECT: NEEDS A GUI AND BUG/CRASH FIXES
 # BlenderBulletPhysicsAddon
 An Addon that lets you use the ABSOLUTLY INCREDIBLE SOFTBODY AND rigidbody Physics from the bullet physics Library IN BLENDER.
 Because as it turns out Softbody Simulations with very large vertex counts if Coded correctly can actually RUN CONSIDERABLY FAST(eta. 60 fps) AND STABLE!!!
