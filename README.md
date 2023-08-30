@@ -49,4 +49,4 @@ you will need to build it because it isn't finished yet (missing GUI only testin
 And that's it, the zip file is your addon.
 
 # Addon Installation in Blender Reminder
-In Blender 3.5 go to Edit/Preferences/Addons/Install select the zip file then click install addon. Then click the Checkbox next to the addons Name to enable it.
+In Blender 3.5 go to Edit/Preferences/Addons/Install select the zip file then click install addon. Then click the Checkbox next to the addons name to enable it.
